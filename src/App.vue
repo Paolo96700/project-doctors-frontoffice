@@ -1,29 +1,22 @@
 <script>
-import { RouterLink, RouterView } from 'vue-router';
-import { initFlowbite } from "flowbite";
-export default{
-  created() {
-    initFlowbite();
-  },
+import AppNavbar from './../components/AppNavbar.vue';
+import AppHome from './../pages/AppHome.vue';
+import AppFooter from '../components/AppFooterccc.vue'
+export default {
+    components: {
+        AppNavbar,
+        AppHome,
+        AppFooter,
+    }
 }
 </script>
 
 <template>
-  <header>
- 
-    <nav class="">
-      <RouterLink to="/">Home</RouterLink>
-      <RouterLink to="/about">About</RouterLink>
-    </nav>
-    
-    
-  </header>
-  <main>
-    <RouterView />
-  </main>
+    <AppNavbar />
 
+    <router-view></router-view>
+
+    <AppFooter />
 </template>
 
-<style>
-
-</style>
+<style scoped></style>

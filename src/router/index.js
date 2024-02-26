@@ -1,21 +1,48 @@
-import { createRouter, createWebHistory } from 'vue-router'
-import HomeView from '../views/HomeView.vue'
-import AboutView from '../views/AboutView.vue'
+import { createRouter, createWebHistory } from "vue-router";
+
+import AppHome from "./../../pages/AppHome.vue";
+import AppDoctorShow from "./../../pages/AppDoctorShow.vue";
+import AppDoctorIndex from "./../../pages/AppDoctorIndex.vue";
+
+
+
+// Importiamo i componenti che definiscono le varie pagine
 
 const router = createRouter({
-  history: createWebHistory(import.meta.env.BASE_URL),
+  history: createWebHistory(),
   routes: [
     {
-      path: '/',
-      name: 'home',
-      component: HomeView
+      path: "/",
+      name: "home",
+      component: AppHome,
     },
     {
-      path: '/about',
-      name: 'about',
-      component: AboutView
-    }
-  ]
-})
+      path: "/doctors",
+      name: "user.index",
+      component: AppDoctorIndex,
+    },
+    {
+      path: "/doctor/:slug",
+      name: "doctor.show",
+      component: AppDoctorShow,
+    },
 
-export default router
+    {
+      path: "/about",
+      name: "about",
+      component: AppDoctorIndex,
+    },
+
+    {
+      path: "/contact",
+      name: "contact",
+      component: AppDoctorShow,
+    },
+
+
+  ],
+});
+
+
+export { router };
+

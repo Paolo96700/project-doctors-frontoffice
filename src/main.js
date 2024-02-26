@@ -1,11 +1,10 @@
-import './assets/main.css'
+
 
 import { createApp } from 'vue'
 import App from './App.vue'
-import router from './router'
+import * as bootstrap from "bootstrap";
 
-import "./style.css";
-import "flowbite";
+import { router } from "./router";
 
 const app = createApp(App)
 
