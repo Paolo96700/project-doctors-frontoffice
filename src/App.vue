@@ -1,7 +1,7 @@
 <script>
 import AppNavbar from './../components/AppNavbar.vue';
 import AppHome from './../pages/AppHome.vue';
-import AppFooter from '../components/AppFooterccc.vue'
+import AppFooter from '../components/AppFooter.vue'
 export default {
     components: {
         AppNavbar,

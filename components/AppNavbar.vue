@@ -12,7 +12,7 @@ export default {
           <div class="d-flex align-items-center px-2">
             <router-link :to="{ name: 'home' }" class="nav-link active d-flex">
               <a class="navbar-brand d-flex align-items-center">
-                <img src="../assets/Doctor-logo.png" class="img-fluid" alt="" width="30">
+                <img src="./../src/assets/doctor-logo.png" class="img-fluid" alt="logo" width="30">
               </a>
               <span class="d-flex align-items-center">
                 <h4 class="text-logo mb-0">Bdoctors</h4>
@@ -25,6 +25,7 @@ export default {
               <router-link class="mx-4" :to="{ name: 'home' }">
                 <span class="text-white">
                   <!-- <font-awesome-icon :icon="['fas', 'house']" class="icon_doctor" />  -->
+                  <i class="fa-solid fa-house"></i>
                   Home
                 </span></router-link>
             </div>
